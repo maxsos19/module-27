@@ -1,0 +1,80 @@
+﻿/* Простые селекторы*/
+.video-container {
+    display: inline-block;
+    margin-top: 0.5em;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+
+.navbar p {
+    color: rgb(52, 235, 229);
+    padding-left: 15%;
+}
+    /* Стили панели навигации при наведении мышью */
+    .navbar p:hover {
+        color: aliceblue;
+    }
+
+header {
+    color: #44453f;
+    padding-left: 1%;
+    padding-top: 1.2%;
+}
+
+#header-index {
+    color: #44453f;
+}
+
+footer {
+    background: #333;
+    color: black;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: auto;
+}
+
+aside {
+    height: 100%;
+    width: 10%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+body {
+    padding-left: 11%;
+}
+/* Комбинированный селектор - применяется ко всем элементам */
+header, footer, aside, body, .navbar, .video-container {
+    font-family: "Helvetica 65 Medium", sans-serif;
+}
+
+header, footer, body, .video-container {
+    background-color: rgb(52, 235, 229);
+}
+/*Подсветка строки поиска*/
+.search_line input:hover {
+    background: rgb(207, 207, 207);
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    border: 2px solid darkgrey;
+    border-radius: 2px;
+    outline: none;
+}
+
+    input:focus {
+        border: 2px solid dimgrey;
+    }
+
+.review {
+    display: inline-block;
+}
